@@ -1,0 +1,43 @@
+<form class="example-form" [formGroup]="formClient" (submit)="submit()">
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name" id="name" name="name" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Brand</mat-label>
+        <input matInput placeholder="Brand" formControlName="brand" id="brand" name="brand" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Year</mat-label>
+        <input matInput placeholder="Year" formControlName="year" id="year" name="year" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput placeholder="Description" formControlName="description" id="description" name="description" required>
+    </mat-form-field>
+
+    <section class="example-section">
+        <label class="example-margin">Sold: </label>
+        <mat-radio-group formControlName="sold">
+          <mat-radio-button class="example-margin" value=true>Yes</mat-radio-button>
+          <mat-radio-button class="example-margin" value=false>No</mat-radio-button>
+        </mat-radio-group>
+      </section>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Created</mat-label>
+        <input matInput disabled placeholder="Created" formControlName="created" id="created" name="created" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Updated</mat-label>
+        <input matInput disabled placeholder="Updated" formControlName="updated" id="updated" name="updated" >
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+
+</form>
